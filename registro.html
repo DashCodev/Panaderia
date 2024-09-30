@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de registro</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilo para los botones */
+    .btn-custom {
+      background-color: #2E1503;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <!-- Formulario de registro -->
+        <form action="registro.php" method="POST">
+          <h2 class="mt-5 mb-4">Regístrate</h2>
+          
+          <!-- Campo de entrada para el nombre -->
+          <div class="form-group">
+            <input type="text" class="form-control col-sm-6" name="nombre" placeholder="Nombre" required>
+          </div>
+          
+          <!-- Campo de entrada para el nombre de usuario -->
+          <div class="form-group">
+            <input type="text" class="form-control col-sm-6" name="usuario" placeholder="Nombre de usuario" required>
+          </div>
+          
+          <!-- Campo de entrada para la contraseña -->
+          <div class="form-group">
+            <input type="password" class="form-control col-sm-6" name="contraseña" placeholder="Contraseña" required>
+          </div>
+          
+          <!-- Botón para enviar el formulario de registro -->
+          <button type="submit" class="btn btn-custom" name="registro">Registrarse</button>
+        </form>
+        
+        <!-- Enlace para redirigir al formulario de inicio de sesión -->
+        <p class="mt-3">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
